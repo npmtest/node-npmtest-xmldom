@@ -1,7 +1,10 @@
-# test coverage for  [xmldom (v0.1.27)](https://github.com/jindw/xmldom)  [![npm package](https://img.shields.io/npm/v/npmtest-xmldom.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-xmldom) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-xmldom.svg)](https://travis-ci.org/npmtest/node-npmtest-xmldom)
+# npmtest-xmldom
+
+#### test coverage for  [xmldom (v0.1.27)](https://github.com/jindw/xmldom)  [![npm package](https://img.shields.io/npm/v/npmtest-xmldom.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-xmldom) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-xmldom.svg)](https://travis-ci.org/npmtest/node-npmtest-xmldom)
+
 #### A W3C Standard XML DOM(Level2 CORE) implementation and parser(DOMParser/XMLSerializer).
 
-[![NPM](https://nodei.co/npm/xmldom.png?downloads=true)](https://www.npmjs.com/package/xmldom)
+[![NPM](https://nodei.co/npm/xmldom.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/xmldom)
 
 | git-branch : | [alpha](https://github.com/npmtest/node-npmtest-xmldom/tree/alpha)|
 |--:|:--|
@@ -9,11 +12,17 @@
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-xmldom/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-xmldom/build/test-report.html)|
 | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-xmldom/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-xmldom/tree/gh-pages/build)|
 
-[![istanbul-coverage](https://npmtest.github.io/node-npmtest-xmldom/build/screenCapture.buildCustomOrg.browser.coverage.html.png)](https://npmtest.github.io/node-npmtest-xmldom/build/coverage.html/index.html)
+- [https://npmtest.github.io/node-npmtest-xmldom/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-xmldom/build/coverage.html/index.html)
 
-[![test-report](https://npmtest.github.io/node-npmtest-xmldom/build/screenCapture.buildCustomOrg.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmtest%252Fnode-npmtest-xmldom%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-xmldom/build/test-report.html)
+[![istanbul-coverage](https://npmtest.github.io/node-npmtest-xmldom/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fcoverage.lib.html.png)](https://npmtest.github.io/node-npmtest-xmldom/build/coverage.html/index.html)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-xmldom/build/screenCapture.buildApidoc.browser.%252Fhome%252Ftravis%252Fbuild%252Fnpmdoc%252Fnode-npmdoc-xmldom%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-xmldom/build/apidoc.html)
+- [https://npmtest.github.io/node-npmtest-xmldom/build/test-report.html](https://npmtest.github.io/node-npmtest-xmldom/build/test-report.html)
+
+[![test-report](https://npmtest.github.io/node-npmtest-xmldom/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Ftest-report.html.png)](https://npmtest.github.io/node-npmtest-xmldom/build/test-report.html)
+
+- [https://npmdoc.github.io/node-npmdoc-xmldom/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-xmldom/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-xmldom/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-xmldom/build/apidoc.html)
 
 ![npmPackageListing](https://npmtest.github.io/node-npmtest-xmldom/build/screenCapture.npmPackageListing.svg)
 
@@ -28,27 +37,22 @@
 {
     "author": {
         "name": "jindw",
-        "email": "jindw@xidea.org",
         "url": "http://www.xidea.org"
     },
     "bugs": {
-        "url": "http://github.com/jindw/xmldom/issues",
-        "email": "jindw@xidea.org"
+        "url": "http://github.com/jindw/xmldom/issues"
     },
     "contributors": [
         {
             "name": "Yaron Naveh",
-            "email": "yaronn01@gmail.com",
             "url": "http://webservices20.blogspot.com/"
         },
         {
             "name": "Harutyun Amirjanyan",
-            "email": "amirjanyan@gmail.com",
             "url": "https://github.com/nightwing"
         },
         {
             "name": "Alan Gutierrez",
-            "email": "alan@prettyrobots.com",
             "url": "http://www.prettyrobots.com/"
         }
     ],
@@ -86,29 +90,23 @@
     "main": "./dom-parser.js",
     "maintainers": [
         {
-            "name": "jindw",
-            "email": "jindw@xidea.org"
+            "name": "jindw"
         },
         {
-            "name": "yaron",
-            "email": "yaronn01@gmail.com"
+            "name": "yaron"
         },
         {
-            "name": "bigeasy",
-            "email": "alan@prettyrobots.com"
+            "name": "bigeasy"
         },
         {
-            "name": "kethinov",
-            "email": "kethinov@gmail.com"
+            "name": "kethinov"
         },
         {
-            "name": "jinjinyun",
-            "email": "jinyun.jin@gmail.com"
+            "name": "jinjinyun"
         }
     ],
     "name": "xmldom",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git://github.com/jindw/xmldom.git"
