@@ -1,7 +1,5 @@
-<!doctype html>
-<html lang="en">
-<head>
-    <title>Code coverage report for node-npmtest-xmldom/xmldom/dom-parser.js</title>
+<html lang="en"><head>
+    <title>Code coverage report for node-npmtest-xmldom/node_modules/xmldom/dom-parser.js</title>
     <meta charset="utf-8">
     <style>
         body, html {
@@ -194,7 +192,7 @@
     <h1 style="font-weight: bold;">
         <a href="https://github.com/npmtest/node-npmtest-xmldom">npmtest-xmldom (v0.0.1)</a>
     </h1>
-    <h1>Code coverage report for <span class="entity">node-npmtest-xmldom/xmldom/dom-parser.js</span></h1>
+    <h1>Code coverage report for <span class="entity">node-npmtest-xmldom/node_modules/xmldom/dom-parser.js</span></h1>
     <h2>
         
         Statements: <span class="metric">13.45% <small>(16 / 119)</small></span> &nbsp;&nbsp;&nbsp;&nbsp;
@@ -210,11 +208,11 @@
         
         Ignored: <span class="metric"><span class="ignore-none">none</span></span> &nbsp;&nbsp;&nbsp;&nbsp;
     </h2>
-    <div class="path"><a href="../../index.html">All files</a> &#187; <a href="index.html">node-npmtest-xmldom/xmldom/</a> &#187; dom-parser.js</div>
+    <div class="path"><a href="../../../index.html">All files</a> » <a href="index.html">node-npmtest-xmldom/node_modules/xmldom/</a> » dom-parser.js</div>
 </div>
 <div class="body">
 <pre><table class="coverage">
-<tr><td class="line-count">1
+<tbody><tr><td class="line-count">1
 2
 3
 4
@@ -718,60 +716,60 @@
 <span class="cline-any cline-yes">1</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="fstat-no" title="function not covered" >function DOMParser(options){</span>
-<span class="cstat-no" title="statement not covered" >	this.options = options ||{locator:{}};</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js"><span class="fstat-no" title="function not covered">function DOMParser(options){</span>
+<span class="cstat-no" title="statement not covered">	this.options = options ||{locator:{}};</span>
 	
 }
-DOMParser.prototype.parseFromString = <span class="fstat-no" title="function not covered" >function(source,mimeType){</span>
-<span class="cstat-no" title="statement not covered" >	var options = this.options;</span>
-<span class="cstat-no" title="statement not covered" >	var sax =  new XMLReader();</span>
-<span class="cstat-no" title="statement not covered" >	var domBuilder = options.domBuilder || new DOMHandler();/</span>/contentHandler and LexicalHandler
-<span class="cstat-no" title="statement not covered" >	var errorHandler = options.errorHandler;</span>
-<span class="cstat-no" title="statement not covered" >	var locator = options.locator;</span>
-<span class="cstat-no" title="statement not covered" >	var defaultNSMap = options.xmlns||{};</span>
-<span class="cstat-no" title="statement not covered" >	var entityMap = {'lt':'&lt;','gt':'&gt;','amp':'&amp;','quot':'"','apos':"'"}</span>
-<span class="cstat-no" title="statement not covered" >	if(locator){</span>
-<span class="cstat-no" title="statement not covered" >		domBuilder.setDocumentLocator(locator)</span>
+DOMParser.prototype.parseFromString = <span class="fstat-no" title="function not covered">function(source,mimeType){</span>
+<span class="cstat-no" title="statement not covered">	var options = this.options;</span>
+<span class="cstat-no" title="statement not covered">	var sax =  new XMLReader();</span>
+<span class="cstat-no" title="statement not covered">	var domBuilder = options.domBuilder || new DOMHandler();/</span>/contentHandler and LexicalHandler
+<span class="cstat-no" title="statement not covered">	var errorHandler = options.errorHandler;</span>
+<span class="cstat-no" title="statement not covered">	var locator = options.locator;</span>
+<span class="cstat-no" title="statement not covered">	var defaultNSMap = options.xmlns||{};</span>
+<span class="cstat-no" title="statement not covered">	var entityMap = {'lt':'&lt;','gt':'&gt;','amp':'&amp;','quot':'"','apos':"'"}</span>
+<span class="cstat-no" title="statement not covered">	if(locator){</span>
+<span class="cstat-no" title="statement not covered">		domBuilder.setDocumentLocator(locator)</span>
 	}
 	
-<span class="cstat-no" title="statement not covered" >	sax.errorHandler = buildErrorHandler(errorHandler,domBuilder,locator);</span>
-<span class="cstat-no" title="statement not covered" >	sax.domBuilder = options.domBuilder || domBuilder;</span>
-<span class="cstat-no" title="statement not covered" >	if(/\/x?html?$/.test(mimeType)){</span>
-<span class="cstat-no" title="statement not covered" >		entityMap.nbsp = '\xa0';</span>
-<span class="cstat-no" title="statement not covered" >		entityMap.copy = '\xa9';</span>
-<span class="cstat-no" title="statement not covered" >		defaultNSMap['']= 'http://www.w3.org/1999/xhtml';</span>
+<span class="cstat-no" title="statement not covered">	sax.errorHandler = buildErrorHandler(errorHandler,domBuilder,locator);</span>
+<span class="cstat-no" title="statement not covered">	sax.domBuilder = options.domBuilder || domBuilder;</span>
+<span class="cstat-no" title="statement not covered">	if(/\/x?html?$/.test(mimeType)){</span>
+<span class="cstat-no" title="statement not covered">		entityMap.nbsp = '\xa0';</span>
+<span class="cstat-no" title="statement not covered">		entityMap.copy = '\xa9';</span>
+<span class="cstat-no" title="statement not covered">		defaultNSMap['']= 'http://www.w3.org/1999/xhtml';</span>
 	}
-<span class="cstat-no" title="statement not covered" >	defaultNSMap.xml = defaultNSMap.xml || 'http://www.w3.org/XML/1998/namespace';</span>
-<span class="cstat-no" title="statement not covered" >	if(source){</span>
-<span class="cstat-no" title="statement not covered" >		sax.parse(source,defaultNSMap,entityMap);</span>
+<span class="cstat-no" title="statement not covered">	defaultNSMap.xml = defaultNSMap.xml || 'http://www.w3.org/XML/1998/namespace';</span>
+<span class="cstat-no" title="statement not covered">	if(source){</span>
+<span class="cstat-no" title="statement not covered">		sax.parse(source,defaultNSMap,entityMap);</span>
 	}else{
-<span class="cstat-no" title="statement not covered" >		sax.errorHandler.error("invalid doc source");</span>
+<span class="cstat-no" title="statement not covered">		sax.errorHandler.error("invalid doc source");</span>
 	}
-<span class="cstat-no" title="statement not covered" >	return domBuilder.doc;</span>
+<span class="cstat-no" title="statement not covered">	return domBuilder.doc;</span>
 }
-<span class="fstat-no" title="function not covered" >function buildErrorHandler(errorImpl,domBuilder,locator){</span>
-<span class="cstat-no" title="statement not covered" >	if(!errorImpl){</span>
-<span class="cstat-no" title="statement not covered" >		if(domBuilder instanceof DOMHandler){</span>
-<span class="cstat-no" title="statement not covered" >			return domBuilder;</span>
+<span class="fstat-no" title="function not covered">function buildErrorHandler(errorImpl,domBuilder,locator){</span>
+<span class="cstat-no" title="statement not covered">	if(!errorImpl){</span>
+<span class="cstat-no" title="statement not covered">		if(domBuilder instanceof DOMHandler){</span>
+<span class="cstat-no" title="statement not covered">			return domBuilder;</span>
 		}
-<span class="cstat-no" title="statement not covered" >		errorImpl = domBuilder ;</span>
+<span class="cstat-no" title="statement not covered">		errorImpl = domBuilder ;</span>
 	}
-<span class="cstat-no" title="statement not covered" >	var errorHandler = {}</span>
-<span class="cstat-no" title="statement not covered" >	var isCallback = errorImpl instanceof Function;</span>
-<span class="cstat-no" title="statement not covered" >	locator = locator||{}</span>
-<span class="fstat-no" title="function not covered" >	function build(key){</span>
-<span class="cstat-no" title="statement not covered" >		var fn = errorImpl[key];</span>
-<span class="cstat-no" title="statement not covered" >		if(!fn &amp;&amp; isCallback){</span>
-<span class="cstat-no" title="statement not covered" >			fn = errorImpl.length == 2?<span class="fstat-no" title="function not covered" >function(msg){<span class="cstat-no" title="statement not covered" ></span>errorImpl(key,msg)}</span>:errorImpl;</span>
+<span class="cstat-no" title="statement not covered">	var errorHandler = {}</span>
+<span class="cstat-no" title="statement not covered">	var isCallback = errorImpl instanceof Function;</span>
+<span class="cstat-no" title="statement not covered">	locator = locator||{}</span>
+<span class="fstat-no" title="function not covered">	function build(key){</span>
+<span class="cstat-no" title="statement not covered">		var fn = errorImpl[key];</span>
+<span class="cstat-no" title="statement not covered">		if(!fn &amp;&amp; isCallback){</span>
+<span class="cstat-no" title="statement not covered">			fn = errorImpl.length == 2?<span class="fstat-no" title="function not covered">function(msg){<span class="cstat-no" title="statement not covered"></span>errorImpl(key,msg)}</span>:errorImpl;</span>
 		}
-<span class="cstat-no" title="statement not covered" >		errorHandler[key] = fn &amp;&amp; <span class="fstat-no" title="function not covered" >function(msg){</span></span>
-<span class="cstat-no" title="statement not covered" >			fn('[xmldom '+key+']\t'+msg+_locator(locator));</span>
-		}||<span class="fstat-no" title="function not covered" >function(){</span>};
+<span class="cstat-no" title="statement not covered">		errorHandler[key] = fn &amp;&amp; <span class="fstat-no" title="function not covered">function(msg){</span></span>
+<span class="cstat-no" title="statement not covered">			fn('[xmldom '+key+']\t'+msg+_locator(locator));</span>
+		}||<span class="fstat-no" title="function not covered">function(){</span>};
 	}
-<span class="cstat-no" title="statement not covered" >	build('warning');</span>
-<span class="cstat-no" title="statement not covered" >	build('error');</span>
-<span class="cstat-no" title="statement not covered" >	build('fatalError');</span>
-<span class="cstat-no" title="statement not covered" >	return errorHandler;</span>
+<span class="cstat-no" title="statement not covered">	build('warning');</span>
+<span class="cstat-no" title="statement not covered">	build('error');</span>
+<span class="cstat-no" title="statement not covered">	build('fatalError');</span>
+<span class="cstat-no" title="statement not covered">	return errorHandler;</span>
 }
 &nbsp;
 //console.log('#\n\n\n\n\n\n\n####')
@@ -784,138 +782,138 @@ DOMParser.prototype.parseFromString = <span class="fstat-no" title="function not
  * DefaultHandler2:DefaultHandler,LexicalHandler, DeclHandler, EntityResolver2
  * @link http://www.saxproject.org/apidoc/org/xml/sax/helpers/DefaultHandler.html
  */
-<span class="fstat-no" title="function not covered" >function DOMHandler() {</span>
-<span class="cstat-no" title="statement not covered" >    this.cdata = false;</span>
+<span class="fstat-no" title="function not covered">function DOMHandler() {</span>
+<span class="cstat-no" title="statement not covered">    this.cdata = false;</span>
 }
-<span class="fstat-no" title="function not covered" >function position(locator,node){</span>
-<span class="cstat-no" title="statement not covered" >	node.lineNumber = locator.lineNumber;</span>
-<span class="cstat-no" title="statement not covered" >	node.columnNumber = locator.columnNumber;</span>
+<span class="fstat-no" title="function not covered">function position(locator,node){</span>
+<span class="cstat-no" title="statement not covered">	node.lineNumber = locator.lineNumber;</span>
+<span class="cstat-no" title="statement not covered">	node.columnNumber = locator.columnNumber;</span>
 }
 /**
  * @see org.xml.sax.ContentHandler#startDocument
  * @link http://www.saxproject.org/apidoc/org/xml/sax/ContentHandler.html
  */ 
 DOMHandler.prototype = {
-	startDocument : <span class="fstat-no" title="function not covered" >function() {</span>
-<span class="cstat-no" title="statement not covered" >    	this.doc = new DOMImplementation().createDocument(null, null, null);</span>
-<span class="cstat-no" title="statement not covered" >    	if (this.locator) {</span>
-<span class="cstat-no" title="statement not covered" >        	this.doc.documentURI = this.locator.systemId;</span>
+	startDocument : <span class="fstat-no" title="function not covered">function() {</span>
+<span class="cstat-no" title="statement not covered">    	this.doc = new DOMImplementation().createDocument(null, null, null);</span>
+<span class="cstat-no" title="statement not covered">    	if (this.locator) {</span>
+<span class="cstat-no" title="statement not covered">        	this.doc.documentURI = this.locator.systemId;</span>
     	}
 	},
-	startElement:<span class="fstat-no" title="function not covered" >function(namespaceURI, localName, qName, attrs) {</span>
-<span class="cstat-no" title="statement not covered" >		var doc = this.doc;</span>
-<span class="cstat-no" title="statement not covered" >	    var el = doc.createElementNS(namespaceURI, qName||localName);</span>
-<span class="cstat-no" title="statement not covered" >	    var len = attrs.length;</span>
-<span class="cstat-no" title="statement not covered" >	    appendElement(this, el);</span>
-<span class="cstat-no" title="statement not covered" >	    this.currentElement = el;</span>
+	startElement:<span class="fstat-no" title="function not covered">function(namespaceURI, localName, qName, attrs) {</span>
+<span class="cstat-no" title="statement not covered">		var doc = this.doc;</span>
+<span class="cstat-no" title="statement not covered">	    var el = doc.createElementNS(namespaceURI, qName||localName);</span>
+<span class="cstat-no" title="statement not covered">	    var len = attrs.length;</span>
+<span class="cstat-no" title="statement not covered">	    appendElement(this, el);</span>
+<span class="cstat-no" title="statement not covered">	    this.currentElement = el;</span>
 	    
-<span class="cstat-no" title="statement not covered" >		this.locator &amp;&amp; position(this.locator,el)</span>
-<span class="cstat-no" title="statement not covered" >	    for (var i = 0 ; i &lt; len; i++) {</span>
-<span class="cstat-no" title="statement not covered" >	        var namespaceURI = attrs.getURI(i);</span>
-<span class="cstat-no" title="statement not covered" >	        var value = attrs.getValue(i);</span>
-<span class="cstat-no" title="statement not covered" >	        var qName = attrs.getQName(i);</span>
-<span class="cstat-no" title="statement not covered" >			var attr = doc.createAttributeNS(namespaceURI, qName);</span>
-<span class="cstat-no" title="statement not covered" >			this.locator &amp;&amp;position(attrs.getLocator(i),attr);</span>
-<span class="cstat-no" title="statement not covered" >			attr.value = attr.nodeValue = value;</span>
-<span class="cstat-no" title="statement not covered" >			el.setAttributeNode(attr)</span>
+<span class="cstat-no" title="statement not covered">		this.locator &amp;&amp; position(this.locator,el)</span>
+<span class="cstat-no" title="statement not covered">	    for (var i = 0 ; i &lt; len; i++) {</span>
+<span class="cstat-no" title="statement not covered">	        var namespaceURI = attrs.getURI(i);</span>
+<span class="cstat-no" title="statement not covered">	        var value = attrs.getValue(i);</span>
+<span class="cstat-no" title="statement not covered">	        var qName = attrs.getQName(i);</span>
+<span class="cstat-no" title="statement not covered">			var attr = doc.createAttributeNS(namespaceURI, qName);</span>
+<span class="cstat-no" title="statement not covered">			this.locator &amp;&amp;position(attrs.getLocator(i),attr);</span>
+<span class="cstat-no" title="statement not covered">			attr.value = attr.nodeValue = value;</span>
+<span class="cstat-no" title="statement not covered">			el.setAttributeNode(attr)</span>
 	    }
 	},
-	endElement:<span class="fstat-no" title="function not covered" >function(namespaceURI, localName, qName) {</span>
-<span class="cstat-no" title="statement not covered" >		var current = this.currentElement</span>
-<span class="cstat-no" title="statement not covered" >		var tagName = current.tagName;</span>
-<span class="cstat-no" title="statement not covered" >		this.currentElement = current.parentNode;</span>
+	endElement:<span class="fstat-no" title="function not covered">function(namespaceURI, localName, qName) {</span>
+<span class="cstat-no" title="statement not covered">		var current = this.currentElement</span>
+<span class="cstat-no" title="statement not covered">		var tagName = current.tagName;</span>
+<span class="cstat-no" title="statement not covered">		this.currentElement = current.parentNode;</span>
 	},
-	startPrefixMapping:<span class="fstat-no" title="function not covered" >function(prefix, uri) {</span>
+	startPrefixMapping:<span class="fstat-no" title="function not covered">function(prefix, uri) {</span>
 	},
-	endPrefixMapping:<span class="fstat-no" title="function not covered" >function(prefix) {</span>
+	endPrefixMapping:<span class="fstat-no" title="function not covered">function(prefix) {</span>
 	},
-	processingInstruction:<span class="fstat-no" title="function not covered" >function(target, data) {</span>
-<span class="cstat-no" title="statement not covered" >	    var ins = this.doc.createProcessingInstruction(target, data);</span>
-<span class="cstat-no" title="statement not covered" >	    this.locator &amp;&amp; position(this.locator,ins)</span>
-<span class="cstat-no" title="statement not covered" >	    appendElement(this, ins);</span>
+	processingInstruction:<span class="fstat-no" title="function not covered">function(target, data) {</span>
+<span class="cstat-no" title="statement not covered">	    var ins = this.doc.createProcessingInstruction(target, data);</span>
+<span class="cstat-no" title="statement not covered">	    this.locator &amp;&amp; position(this.locator,ins)</span>
+<span class="cstat-no" title="statement not covered">	    appendElement(this, ins);</span>
 	},
-	ignorableWhitespace:<span class="fstat-no" title="function not covered" >function(ch, start, length) {</span>
+	ignorableWhitespace:<span class="fstat-no" title="function not covered">function(ch, start, length) {</span>
 	},
-	characters:<span class="fstat-no" title="function not covered" >function(chars, start, length) {</span>
-<span class="cstat-no" title="statement not covered" >		chars = _toString.apply(this,arguments)</span>
+	characters:<span class="fstat-no" title="function not covered">function(chars, start, length) {</span>
+<span class="cstat-no" title="statement not covered">		chars = _toString.apply(this,arguments)</span>
 		//console.log(chars)
-<span class="cstat-no" title="statement not covered" >		if(chars){</span>
-<span class="cstat-no" title="statement not covered" >			if (this.cdata) {</span>
-<span class="cstat-no" title="statement not covered" >				var charNode = this.doc.createCDATASection(chars);</span>
+<span class="cstat-no" title="statement not covered">		if(chars){</span>
+<span class="cstat-no" title="statement not covered">			if (this.cdata) {</span>
+<span class="cstat-no" title="statement not covered">				var charNode = this.doc.createCDATASection(chars);</span>
 			} else {
-<span class="cstat-no" title="statement not covered" >				var charNode = this.doc.createTextNode(chars);</span>
+<span class="cstat-no" title="statement not covered">				var charNode = this.doc.createTextNode(chars);</span>
 			}
-<span class="cstat-no" title="statement not covered" >			if(this.currentElement){</span>
-<span class="cstat-no" title="statement not covered" >				this.currentElement.appendChild(charNode);</span>
-			}else <span class="cstat-no" title="statement not covered" >if(/^\s*$/.test(chars)){</span>
-<span class="cstat-no" title="statement not covered" >				this.doc.appendChild(charNode);</span>
+<span class="cstat-no" title="statement not covered">			if(this.currentElement){</span>
+<span class="cstat-no" title="statement not covered">				this.currentElement.appendChild(charNode);</span>
+			}else <span class="cstat-no" title="statement not covered">if(/^\s*$/.test(chars)){</span>
+<span class="cstat-no" title="statement not covered">				this.doc.appendChild(charNode);</span>
 				//process xml
 			}
-<span class="cstat-no" title="statement not covered" >			this.locator &amp;&amp; position(this.locator,charNode)</span>
+<span class="cstat-no" title="statement not covered">			this.locator &amp;&amp; position(this.locator,charNode)</span>
 		}
 	},
-	skippedEntity:<span class="fstat-no" title="function not covered" >function(name) {</span>
+	skippedEntity:<span class="fstat-no" title="function not covered">function(name) {</span>
 	},
-	endDocument:<span class="fstat-no" title="function not covered" >function() {</span>
-<span class="cstat-no" title="statement not covered" >		this.doc.normalize();</span>
+	endDocument:<span class="fstat-no" title="function not covered">function() {</span>
+<span class="cstat-no" title="statement not covered">		this.doc.normalize();</span>
 	},
-	setDocumentLocator:<span class="fstat-no" title="function not covered" >function (locator) {</span>
-<span class="cstat-no" title="statement not covered" >	    if(this.locator = locator){// &amp;&amp; !('lineNumber' in locator)){</span>
-<span class="cstat-no" title="statement not covered" >	    	locator.lineNumber = 0;</span>
+	setDocumentLocator:<span class="fstat-no" title="function not covered">function (locator) {</span>
+<span class="cstat-no" title="statement not covered">	    if(this.locator = locator){// &amp;&amp; !('lineNumber' in locator)){</span>
+<span class="cstat-no" title="statement not covered">	    	locator.lineNumber = 0;</span>
 	    }
 	},
 	//LexicalHandler
-	comment:<span class="fstat-no" title="function not covered" >function(chars, start, length) {</span>
-<span class="cstat-no" title="statement not covered" >		chars = _toString.apply(this,arguments)</span>
-<span class="cstat-no" title="statement not covered" >	    var comm = this.doc.createComment(chars);</span>
-<span class="cstat-no" title="statement not covered" >	    this.locator &amp;&amp; position(this.locator,comm)</span>
-<span class="cstat-no" title="statement not covered" >	    appendElement(this, comm);</span>
+	comment:<span class="fstat-no" title="function not covered">function(chars, start, length) {</span>
+<span class="cstat-no" title="statement not covered">		chars = _toString.apply(this,arguments)</span>
+<span class="cstat-no" title="statement not covered">	    var comm = this.doc.createComment(chars);</span>
+<span class="cstat-no" title="statement not covered">	    this.locator &amp;&amp; position(this.locator,comm)</span>
+<span class="cstat-no" title="statement not covered">	    appendElement(this, comm);</span>
 	},
 	
-	startCDATA:<span class="fstat-no" title="function not covered" >function() {</span>
+	startCDATA:<span class="fstat-no" title="function not covered">function() {</span>
 	    //used in characters() methods
-<span class="cstat-no" title="statement not covered" >	    this.cdata = true;</span>
+<span class="cstat-no" title="statement not covered">	    this.cdata = true;</span>
 	},
-	endCDATA:<span class="fstat-no" title="function not covered" >function() {</span>
-<span class="cstat-no" title="statement not covered" >	    this.cdata = false;</span>
+	endCDATA:<span class="fstat-no" title="function not covered">function() {</span>
+<span class="cstat-no" title="statement not covered">	    this.cdata = false;</span>
 	},
 	
-	startDTD:<span class="fstat-no" title="function not covered" >function(name, publicId, systemId) {</span>
-<span class="cstat-no" title="statement not covered" >		var impl = this.doc.implementation;</span>
-<span class="cstat-no" title="statement not covered" >	    if (impl &amp;&amp; impl.createDocumentType) {</span>
-<span class="cstat-no" title="statement not covered" >	        var dt = impl.createDocumentType(name, publicId, systemId);</span>
-<span class="cstat-no" title="statement not covered" >	        this.locator &amp;&amp; position(this.locator,dt)</span>
-<span class="cstat-no" title="statement not covered" >	        appendElement(this, dt);</span>
+	startDTD:<span class="fstat-no" title="function not covered">function(name, publicId, systemId) {</span>
+<span class="cstat-no" title="statement not covered">		var impl = this.doc.implementation;</span>
+<span class="cstat-no" title="statement not covered">	    if (impl &amp;&amp; impl.createDocumentType) {</span>
+<span class="cstat-no" title="statement not covered">	        var dt = impl.createDocumentType(name, publicId, systemId);</span>
+<span class="cstat-no" title="statement not covered">	        this.locator &amp;&amp; position(this.locator,dt)</span>
+<span class="cstat-no" title="statement not covered">	        appendElement(this, dt);</span>
 	    }
 	},
 	/**
 	 * @see org.xml.sax.ErrorHandler
 	 * @link http://www.saxproject.org/apidoc/org/xml/sax/ErrorHandler.html
 	 */
-	warning:<span class="fstat-no" title="function not covered" >function(error) {</span>
-<span class="cstat-no" title="statement not covered" >		console.warn('[xmldom warning]\t'+error,_locator(this.locator));</span>
+	warning:<span class="fstat-no" title="function not covered">function(error) {</span>
+<span class="cstat-no" title="statement not covered">		console.warn('[xmldom warning]\t'+error,_locator(this.locator));</span>
 	},
-	error:<span class="fstat-no" title="function not covered" >function(error) {</span>
-<span class="cstat-no" title="statement not covered" >		console.error('[xmldom error]\t'+error,_locator(this.locator));</span>
+	error:<span class="fstat-no" title="function not covered">function(error) {</span>
+<span class="cstat-no" title="statement not covered">		console.error('[xmldom error]\t'+error,_locator(this.locator));</span>
 	},
-	fatalError:<span class="fstat-no" title="function not covered" >function(error) {</span>
-<span class="cstat-no" title="statement not covered" >		console.error('[xmldom fatalError]\t'+error,_locator(this.locator));</span>
-<span class="cstat-no" title="statement not covered" >	    throw error;</span>
+	fatalError:<span class="fstat-no" title="function not covered">function(error) {</span>
+<span class="cstat-no" title="statement not covered">		console.error('[xmldom fatalError]\t'+error,_locator(this.locator));</span>
+<span class="cstat-no" title="statement not covered">	    throw error;</span>
 	}
 }
-<span class="fstat-no" title="function not covered" >function _locator(l){</span>
-<span class="cstat-no" title="statement not covered" >	if(l){</span>
-<span class="cstat-no" title="statement not covered" >		return '\n@'+(l.systemId ||'')+'#[line:'+l.lineNumber+',col:'+l.columnNumber+']'</span>
+<span class="fstat-no" title="function not covered">function _locator(l){</span>
+<span class="cstat-no" title="statement not covered">	if(l){</span>
+<span class="cstat-no" title="statement not covered">		return '\n@'+(l.systemId ||'')+'#[line:'+l.lineNumber+',col:'+l.columnNumber+']'</span>
 	}
 }
-<span class="fstat-no" title="function not covered" >function _toString(chars,start,length){</span>
-<span class="cstat-no" title="statement not covered" >	if(typeof chars == 'string'){</span>
-<span class="cstat-no" title="statement not covered" >		return chars.substr(start,length)</span>
+<span class="fstat-no" title="function not covered">function _toString(chars,start,length){</span>
+<span class="cstat-no" title="statement not covered">	if(typeof chars == 'string'){</span>
+<span class="cstat-no" title="statement not covered">		return chars.substr(start,length)</span>
 	}else{//java sax connect width xmldom on rhino(what about: "? &amp;&amp; !(chars instanceof String)")
-<span class="cstat-no" title="statement not covered" >		if(chars.length &gt;= start+length || start){</span>
-<span class="cstat-no" title="statement not covered" >			return new java.lang.String(chars,start,length)+'';</span>
+<span class="cstat-no" title="statement not covered">		if(chars.length &gt;= start+length || start){</span>
+<span class="cstat-no" title="statement not covered">			return new java.lang.String(chars,start,length)+'';</span>
 		}
-<span class="cstat-no" title="statement not covered" >		return chars;</span>
+<span class="cstat-no" title="statement not covered">		return chars;</span>
 	}
 }
 &nbsp;
@@ -951,15 +949,15 @@ DOMHandler.prototype = {
  *  #unparsedEntityDecl(name, publicId, systemId, notationName) {};
  */
 "endDTD,startEntity,endEntity,attributeDecl,elementDecl,externalEntityDecl,internalEntityDecl,resolveEntity,getExternalSubset,notationDecl,unparsedEntityDecl".replace(/\w+/g,function(key){
-	DOMHandler.prototype[key] = <span class="fstat-no" title="function not covered" >function(){<span class="cstat-no" title="statement not covered" ></span>return null}</span>
+	DOMHandler.prototype[key] = <span class="fstat-no" title="function not covered">function(){<span class="cstat-no" title="statement not covered"></span>return null}</span>
 })
 &nbsp;
 /* Private static helpers treated below as private instance methods, so don't need to add these to the public API; we might use a Relator to also get rid of non-standard public properties */
-<span class="fstat-no" title="function not covered" >function appendElement (hander,node) {</span>
-<span class="cstat-no" title="statement not covered" >    if (!hander.currentElement) {</span>
-<span class="cstat-no" title="statement not covered" >        hander.doc.appendChild(node);</span>
+<span class="fstat-no" title="function not covered">function appendElement (hander,node) {</span>
+<span class="cstat-no" title="statement not covered">    if (!hander.currentElement) {</span>
+<span class="cstat-no" title="statement not covered">        hander.doc.appendChild(node);</span>
     } else {
-<span class="cstat-no" title="statement not covered" >        hander.currentElement.appendChild(node);</span>
+<span class="cstat-no" title="statement not covered">        hander.currentElement.appendChild(node);</span>
     }
 }//appendChild and setAttributeNS are preformance key
 &nbsp;
@@ -971,10 +969,11 @@ DOMHandler.prototype = {
 //}
 &nbsp;
 &nbsp;</pre></td></tr>
-</table></pre>
+</tbody></table></pre>
 </div>
 <div class="footer">
-    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 11 2017 17:41:53 GMT+0000 (UTC)</div>
+    <div class="meta">Generated by <a href="https://github.com/kaizhu256/node-utility2" target="_blank">utility2</a> at Tue Apr 18 2017 18:59:54 GMT+0000 (UTC)</div>
 </div>
-</body>
-</html>
+
+
+</body></html>
