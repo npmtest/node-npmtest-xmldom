@@ -1,6 +1,6 @@
 # npmtest-xmldom
 
-#### test coverage for  [xmldom (v0.1.27)](https://github.com/jindw/xmldom)  [![npm package](https://img.shields.io/npm/v/npmtest-xmldom.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-xmldom) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-xmldom.svg)](https://travis-ci.org/npmtest/node-npmtest-xmldom)
+#### basic test coverage for  [xmldom (v0.1.27)](https://github.com/jindw/xmldom)  [![npm package](https://img.shields.io/npm/v/npmtest-xmldom.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-xmldom) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-xmldom.svg)](https://travis-ci.org/npmtest/node-npmtest-xmldom)
 
 #### A W3C Standard XML DOM(Level2 CORE) implementation and parser(DOMParser/XMLSerializer).
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-xmldom/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-xmldom/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-xmldom/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-xmldom/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-xmldom/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-xmldom/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-xmldom/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-xmldom/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-xmldom/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-xmldom/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-xmldom/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-xmldom/build/coverage.html/index.html)
 
@@ -114,7 +114,8 @@
     "scripts": {
         "test": "proof platform win32 && proof test */*/*.t.js || t/test"
     },
-    "version": "0.1.27"
+    "version": "0.1.27",
+    "bin": {}
 }
 ```
 
